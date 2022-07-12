@@ -9,6 +9,10 @@ module.exports = {
           "kandangku-secondary": "#FF5F01",
           "kandangku-text-dark": "#211B3D",
           "border-color": "#EAE8F5",
+          "paragraf-color": "#5B5575",
+        },
+        lineHeight : {
+          'heroLineHight' : '64px',
         }
     },
     boxShadow : {
