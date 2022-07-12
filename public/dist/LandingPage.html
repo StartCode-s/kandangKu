@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KandangKu</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--compiled css Tailwind’s utility-->
+    <link rel="stylesheet" href="../assets/css/App.css">
+</head>
+<body class="font-Poppins">
+    <div id="app">
+        <!--Navbar-->
+        <nav id="navbar" class="fixed z-50 top-0 left-0 right-0 shadow-navbarShadow bg-white">
+            <div class="container flex justify-between items-center py-5">
+                <a href="#" class="flex items-center">
+                    <img src="../assets/img/brand-logo.png" class="mr-3 h-12 sm:h-14 rounded-full" alt="KandangKu Logo" />
+                    <h5 class="self-center text-xl font-medium whitespace-nowrap text-kandangku-text-dark">KandangKu</h5>
+                </a>
+                <div class="hidden w-full md:flex md:justify-end" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:items-center">
+                      <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:text-kandangku-primary md:p-0 active:text-kandangku-primary">Beranda</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-kandangku-text-dark border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-kandangku-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tentang</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-kandangku-text-dark border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-kandangku-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Galeri</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-kandangku-text-dark border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-kandangku-primary md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Harga</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-6 bg-kandangku-soft-primary rounded-3xl text-kandangku-primary border-2 border-[#FFD6D6] border-solid">Hubungi Sekarang</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Hero-->
+        <section id="hero" class="pt-36 md:pt-40">
+            <div class="container">
+                <div class="flex flex-col md:flex-row items-center gap-x-20">
+                    <div class="text-center md:text-start w-full">
+                        <p class="block text-kandangku-secondary font-semibold text-sm">BUKAN AYAM BIASA</p>
+                        <h1 class="block mt-6 text-kandangku-text-dark text-2xl md:text-4xl lg:text-5xl font-semibold">Ayo Temukan <span class="text-kandangku-primary">Ayam</span> Yang Anda <span class="text-kandangku-primary">Inginkan</span></h1>
+                        <div class="flex justify-center md:justify-start">
+                            <a href="#" class="block bg-kandangku-primary hover:bg-kandangku-primary-800 transition-colors text-white font-medium py-2 px-6 rounded-full text-xs mt-6 md:mt-8 w-fit md:text-sm">Lihat Ayam</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-end w-full mt-10 md:mt-0">
+                        <img class="w-full max-w-lg" src="../assets/img/hero-images.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Tentang-->
+        <section id="Tentang" class="pt-36 md:pt-40">
+            <div class="container">
+                <div class="flex justify-center flex-col items-center text-center">
+                    <p class="block text-kandangku-secondary font-semibold text-sm">TENTANG</p>
+                    <h5 class="text-kandangku-text-dark font-semibold text-xl md:text-2xl mt-2">Ayam Terbaik Kami</h5>
+                </div>
+                <div class="grid grid-cols-4 gap-x-10 mt-16">
+                    <div class="bg-white rounded-lg py-8 px-6 shadow-cardShadow relative">
+                        <div class="absolute -left-6 -top-8">
+                            <img class="h-14 w-fit" src="../assets/img/icon/corn-ICON.png" alt="">
+                        </div>
+                        <h5 class="text-kandangku-text-dark font-semibold text-lg">Makanan</h5>
+                        <p class="text-kandangku-text-dark font-light mt-1 text-sm">Yang kami gunakan bersertifikat vegetarian organik.</p>
+                    </div>
+                    <div class="bg-white rounded-lg py-8 px-6 shadow-cardShadow relative">
+                        <div class="absolute -left-6 -top-8">
+                            <img class="h-14 w-fit" src="../assets/img/icon/water-drop-ICON.png" alt="">
+                        </div>
+                        <h5 class="text-kandangku-text-dark font-semibold text-lg">Air</h5>
+                        <p class="text-kandangku-text-dark font-light mt-1 text-sm">Air yang kami gunakan adalah 100% air artesis murni.</p>
+                    </div>
+                    <div class="bg-white rounded-lg py-8 px-6 shadow-cardShadow relative">
+                        <div class="absolute -left-6 -top-8">
+                            <img class="h-14 w-fit" src="../assets/img/icon/lab-tool-ICON.png" alt="">
+                        </div>
+                        <h5 class="text-kandangku-text-dark font-semibold text-lg">Kesehatan</h5>
+                        <p class="text-kandangku-text-dark font-light mt-1 text-sm">Ayam kami, tidak pernah ada antibiotik dan transgenik.</p>
+                    </div>
+                    <div class="bg-white rounded-lg py-8 px-6 shadow-cardShadow relative">
+                        <div class="absolute -left-6 -top-8">
+                            <img class="h-14 w-fit" src="../assets/img/icon//broom-ICON.png" alt="">
+                        </div>
+                        <h5 class="text-kandangku-text-dark font-semibold text-lg">Kebersihan</h5>
+                        <p class="text-kandangku-text-dark font-light mt-1 text-sm">Rutin fumigasi agar kandang terhindar dari bahaya nyamuk. lorem100</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Harga-->
+        <section id="Harga" class="pt-36 md:pt-40">
+            <div class="container">
+                <div class="flex justify-center flex-col items-center text-center">
+                    <p class="block text-kandangku-secondary font-semibold text-sm">HARGA</p>
+                    <h5 class="text-kandangku-text-dark font-semibold text-xl md:text-2xl mt-2">Harga Yang Terjangkau</h5>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5 md:gap-y-0 mt-10 md:mt-16">
+                    <div class="border border-border-color border-solid rounded-3xl p-5">
+                        <div class="flex flex-col justify-center items-center text-center">
+                            <p class="block text-kandangku-secondary font-semibold text-sm">GILA BALAJAR</p>
+                            <h5 class="text-kandangku-text-dark font-semibold text-3xl mt-4">Rp 1.000.000</h5>
+                        </div>
+                        <div class="mt-5">
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">Pro Techstack Kit</p>
+                            </div>
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">iMac Pro 2021 & Display</p>
+                            </div>
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">1-1 Mentoring Program</p>
+                            </div>
+                            <div class="flex items-center justify-start py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">Final Project Certificate</p>
+                            </div>
+                            <a href="#" class="block text-center text-sm md:text-base bg-kandangku-soft-primary py-2 px-4 text-kandangku-primary font-medium mt-5 w-full rounded-full border-[#FFD6D6] border-solid border-2 hover:bg-kandangku-primary hover:border-kandangku-primary hover:text-white transition-colors">Lihat Ayam</a>
+                        </div>
+                    </div>
+                    <div class="border border-border-color border-solid rounded-3xl p-5">
+                        <div class="flex flex-col justify-center items-center text-center">
+                            <p class="block text-kandangku-secondary font-semibold text-sm">BARU MULAI</p>
+                            <h5 class="text-kandangku-text-dark font-semibold text-3xl mt-4">Rp 800.000</h5>
+                        </div>
+                        <div class="mt-5">
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">Pro Techstack Kit</p>
+                            </div>
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">iMac Pro 2021 & Display</p>
+                            </div>
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">1-1 Mentoring Program</p>
+                            </div>
+                            <div class="flex items-center justify-start py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">Final Project Certificate</p>
+                            </div>
+                            <a href="#" class="block text-center text-sm md:text-base bg-kandangku-soft-primary py-2 px-4 text-kandangku-primary font-medium mt-5 w-full rounded-full border-[#FFD6D6] border-solid border-2 hover:bg-kandangku-primary hover:border-kandangku-primary hover:text-white transition-colors">Lihat Ayam</a>
+                        </div>
+                    </div>
+                    <div class="border border-border-color border-solid rounded-3xl p-5">
+                        <div class="flex flex-col justify-center items-center text-center">
+                            <p class="block text-kandangku-secondary font-semibold text-sm">BELAJAR BARENG</p>
+                            <h5 class="text-kandangku-text-dark font-semibold text-3xl mt-4">Rp 700.000</h5>
+                        </div>
+                        <div class="mt-5">
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">Pro Techstack Kit</p>
+                            </div>
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">iMac Pro 2021 & Display</p>
+                            </div>
+                            <div class="flex items-center justify-start border-b border-border-color border-solid py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">1-1 Mentoring Program</p>
+                            </div>
+                            <div class="flex items-center justify-start py-4">
+                                <ion-icon class="text-[#31B380] text-2xl" name="checkmark-circle"></ion-icon>
+                                <p class="pl-2 font-medium text-sm md:text-base">Final Project Certificate</p>
+                            </div>
+                            <a href="#" class="block text-center text-sm md:text-base bg-kandangku-soft-primary py-2 px-4 text-kandangku-primary font-medium mt-5 w-full rounded-full border-[#FFD6D6] border-solid border-2 hover:bg-kandangku-primary hover:border-kandangku-primary hover:text-white transition-colors">Lihat Ayam</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--ion icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
