@@ -840,6 +840,16 @@ video {
   z-index: 10;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -981,6 +991,10 @@ video {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.snap-center {
+  scroll-snap-align: center;
 }
 
 .grid-cols-4 {
