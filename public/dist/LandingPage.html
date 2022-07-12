@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!--slick js-->
-    <link rel="stylesheet" href="/node_modules/slick/slick-theme.css">
-    <link rel="stylesheet" href="/node_modules/slick/slick.css">
+    <link rel="stylesheet" href="../vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="../vendor/slick/slick.css">
 
     <!--compiled css Tailwind’s utility-->
     <link rel="stylesheet" href="../assets/css/App.css">
@@ -54,6 +54,7 @@
                     <div class="text-center md:text-start w-full">
                         <p class="block text-kandangku-secondary font-semibold text-sm">BUKAN AYAM BIASA</p>
                         <h1 class="block mt-6 text-kandangku-text-dark text-2xl md:text-4xl lg:text-5xl font-semibold lg:leading-heroLineHight">Ayo Temukan <span class="text-kandangku-primary">Ayam</span> Yang Anda <span class="text-kandangku-primary">Inginkan</span></h1>
+                        <p class="text-kandangku-text-dark font-light text-sm md:text-start mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt similique delectus! Quos, praesentium rem odit ut officiis consequatur eligendi repudiandae quasi esse eius itaque</p>
                         <div class="flex justify-center md:justify-start">
                             <a href="#" class="block bg-kandangku-primary hover:bg-kandangku-primary-800 transition-colors text-white font-medium py-2 px-6 rounded-full text-xs mt-6 md:mt-8 w-fit md:text-sm">Lihat Ayam</a>
                         </div>
@@ -125,6 +126,7 @@
         <!--Galeri-->
         <section id="Galery" class="pt-32 md:pt-40">
             <div class="container">
+                <!--Galeri Pertama-->
                 <div class="flex flex-col-reverse md:flex-row justify-center items-center md:gap-x-6">
                     <div class="fotoAyam w-full md:max-w-md xl:max-w-xl mt-10 md:mt-0">
                         <div class="w-full px-2">
@@ -148,6 +150,7 @@
                         </div>
                     </div>
                 </div>
+                <!--Galeri Kedua-->
                 <div class="flex flex-col items-center mt-16 md:flex-row md:items-start gap-x-4">
                     <div class="w-full">
                         <div class="flex justify-start flex-col items-center text-center md:items-start md:text-start">
@@ -159,12 +162,9 @@
                             <a href="#" class="block text-center text-sm bg-kandangku-soft-primary py-2 px-8 text-kandangku-primary font-medium mt-5 w-fit rounded-full border-[#FFD6D6] border-solid border-2 hover:bg-kandangku-primary hover:border-kandangku-primary hover:text-white transition-colors">Lihat Lebih Banyak</a>
                         </div>
                     </div>
-                    <div class="flex w-full gap-x-5 mt-12 md:mt-0 md:max-w-md">
-                        <div class="w-full">
-                            <iframe class="w-full rounded-lg h-72 mt-14" src="https://www.youtube.com/embed/hY2rhLDUuuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="w-full">
-                            <iframe class="w-full rounded-lg h-72" src="https://www.youtube.com/embed/hY2rhLDUuuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="w-full mt-10 md:mt-0">
+                        <div class="aspect-w-2 aspect-h-1">
+                            <iframe src="../assets/video/videoAyamKetawa-2.mp4"></iframe>
                         </div>
                     </div>
                 </div>
@@ -280,7 +280,7 @@
                     </div>
                     <div class="w-full flex justify-end mt-8 md:mt-0">
                         <div class="w-full lg:max-w-sm">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.6589377464115!2d106.86534401445023!3d-6.564662295252136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c762ef451643%3A0x3b05734fd8b8cdf8!2sBanana%20Residence!5e0!3m2!1sid!2sid!4v1657627407557!5m2!1sid!2sid" class="w-full h-96 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51283.85806440479!2d106.70183184208825!3d-6.332832755226491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef5bd347fd7b%3A0xa371ac3674880ed2!2sPamulang%20Square!5e0!3m2!1sid!2sid!4v1657635506074!5m2!1sid!2sid" class="w-full h-96 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -296,12 +296,12 @@
     </div>
 
     <!--jquery-->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <!--ion icon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--slick js-->
-    <script src="/node_modules/slick/slick.min.js"></script>
+    <script src="../vendor/slick/slick.min.js"></script>
 
     <script>
         $(document).ready(function(){
