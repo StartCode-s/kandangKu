@@ -954,6 +954,26 @@ video {
   padding-right: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1024,6 +1044,10 @@ video {
   font-weight: 300;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-kandangku-text-dark {
   --tw-text-opacity: 1;
   color: rgb(33 27 61 / var(--tw-text-opacity));
@@ -1052,6 +1076,10 @@ video {
 .text-paragraf-color {
   --tw-text-opacity: 1;
   color: rgb(91 85 117 / var(--tw-text-opacity));
+}
+
+.bg-blend-soft-light {
+  background-blend-mode: soft-light;
 }
 
 .shadow-navbarShadow {
@@ -1203,6 +1231,21 @@ video {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:pt-40 {
